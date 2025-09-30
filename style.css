@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Smooch+Sans:wght@100..900&display=swap');
 
 /* Reset básico */
 * {
@@ -8,44 +8,341 @@
 
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+html,body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;  
+  padding: 0;
 }
 
-.apresentacao {
-    font-family: "Anton", sans-serif;
-    font-weight: 1200px;
-    font-style: normal;
-    color: aliceblue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #020024, #090979, #00d4ff) !important;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;      
+}
+
+
+.nome h2 {
+  font-family: 'Alumni Sans', sans-serif;
+  text-align: center;
+  font-weight: 500;    
+  font-size: 48px;     
+  line-height: 1.1;     
+  letter-spacing: 1px;  
+  color: #fff;
+  justify-content: center;
+  
+  white-space: nowrap;     
+  overflow: hidden;        
+  border-right: 3px solid #fff; 
+
+  width: 0;
+  animation: infinite typing 2s steps(10) forwards, blink 0.7s ;
+}
+
+@keyframes typing {
+  0%   { width: 0; }
+  40%  { width: 8ch; }   
+  60%  { width: 8ch; }   
+  100% { width: 0; }     
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.sobre p {
+  margin: 0;   
+}
+
+.sobre {
+  font-family: 'Alumni Sans', sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  color: #ddd;
+  font-size: 22px;
+  line-height: 1.4; 
+}
+
 
 .links {
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 60px;
-    gap: 15px;
+    font-size: 40px;
+    gap: 10px;
     color: rgb(255, 255, 255);
 }
 
 .links a i {
-  color: #ffffff; /* cor fixa dos ícones */
+  color: #ffffff; 
 }
 
 .links a i:visited,
 .links a i:active,
 .links a i:hover {
-  color: #ffffff; /* mantém a mesma cor sempre */
+  color: #ffffff;
 }
 
 .links a i:hover {
-  transform: scale(1.2); /* aumenta levemente */
+  transform: scale(1.2); 
   transition: transform 0.5s;
 }
+
+.seta {
+  position: relative;
+  position: absolute;       
+  bottom: 20px;            
+  left: 50%;                
+  cursor: pointer;        
+  color: #ddd;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center; 
+  gap: 10px;              
+  margin-top: 30px;
+}
+
+.techs img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid cyan;
+  border-radius: 20%;
+  transition: transform 0.3s ease; 
+}
+
+.techs img:hover {
+  transform: scale(1.3); 
+}
+
+.seta img {
+  width: 30px;             
+  animation: bounce 1.5s infinite;
+}
+
+/* Animação da seta */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0);
+  }
+  40% {
+    transform: translate(-50%, -10px);
+  }
+  60% {
+    transform: translate(-50%, -5px);
+  }
+}
+
+.card {
+  font-family: "Alumni Sans", sans-serif;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  color: #fff;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.card h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.card h4 {
+  font-size: 19px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #a3c9ff;
+}
+
+.card .data {
+  font-size: 15px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.card .tecnologias {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #00d4ff;
+}
+
+.card .tecnologias strong {
+  color: #00ffcc;
+}
+
+.projetos h2{
+  font-family: "Alumni Sans", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;   
+  color: white;
+}
+
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px; 
+  margin: 0;
+  min-height: auto;     
+  height: auto;         
+}
+
+.card-contato {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-contato:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.card-contato h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #00d4ff;
+}
+
+.card-contato input,
+.card-contato textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  border-radius: 8px;
+  background: rgba(231, 14, 14, 0.05);
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-contato input::placeholder,
+.card-contato textarea::placeholder {
+  color: #aaa;
+}
+
+.card-contato textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Botão */
+.card-contato button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #00d4ff, #090979);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card-contato button:hover {
+  background: linear-gradient(90deg, #090979, #00d4ff);
+}
+
+footer {
+  background: rgba(163, 16, 16, 0.05);  
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  color: #ccc;
+  font-family: 'Alumni Sans', sans-serif;
+  font-size: 17px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p strong {
+  color: #00d4ff; 
+}
+
+.card .btn-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  margin-top: 15px;
+  padding: 12px 15px;
+  width: 45%;            
+  box-sizing: border-box;   
+  
+  border: none;
+  border-radius: 5px;
+  background: #000;       
+  
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card .btn-github:hover {
+  background: #111;          
+  transform: scale(1.03);
+}
+
+.card .btn-github i {
+  font-size: 18px;         
+}
+

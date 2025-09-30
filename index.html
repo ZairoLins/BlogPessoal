@@ -12,68 +12,153 @@
 
 <body>
     <!-- Apresentação -->
-    <section id="home">
-        <div class="apresentacao">
-            <h2>Zairo Lins</h2>
-        </div>
-        <div class="links">
-            <a href="https://wa.me/63999953031" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/zairolins/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/ZairoLins" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:zairolins15@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-    </section>
+    <section id="home" class="section">
+        <div class="content">
+            <div class="nome">
+                <h2>Zairo Lins</h2>
+            </div>
 
-    <!-- Sobre mim -->
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Aqui vai um resumo da sua formação, interesses e trajetória profissional.</p>
-    </section>
+            <!-- Sobre -->
+            <div class="sobre">
+                <p>
+                    Buscando desenvolver soluções úteis e criativas, usando boas
+                    tecnologias e práticas de desenvolvimento para dar vida ao seu projeto.
+                </p>
+            </div>
 
-    <!-- Tecnologias -->
-    <section id="tecnologias">
-        <h2>Tecnologias</h2>
-        <p>Lista das linguagens, frameworks e ferramentas que você utiliza.</p>
+            <!-- Links -->
+            <div class="links">
+                <a href="https://wa.me/63999953031" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zairolins/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ZairoLins" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:zairolins15@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Techs -->
+            <div class="techs">
+                <a href="imagens/html-5.png" target="_blank">
+                    <img src="imagens/html-5.png" alt="HTML">
+                </a>
+                <a href="imagens/css-3.png" target="_blank">
+                    <img src="imagens/css-3.png" alt="CSS">
+                </a>
+                <a href="imagens/script-java.png" target="_blank">
+                    <img src="imagens/script-java.png" alt="Script Java">
+                </a>
+                <a href="imagens/java.png" target="_blank">
+                    <img src="imagens/java.png" alt="Java">
+                </a>
+                <a href="imagens/python.png" target="_blank">
+                    <img src="imagens/python.png" alt="Python">
+                </a>
+                <a href="imagens/docker.png" target="_blank">
+                    <img src="imagens/docker.png" alt="Docker">
+                </a>
+                <a href="imagens/mysql.png" target="_blank">
+                    <img src="imagens/mysql.png" alt="MySQL">
+                </a>
+                <a href="imagens/postgre.png" target="_blank">
+                    <img src="imagens/postgre.png" alt="PostgreSQL">
+                </a>
+                <a href="imagens/figma.png" target="_blank">
+                    <img src="imagens/figma.png" alt="Figma">
+                </a>
+            </div>
+
+            <!-- seta -->
+            <div class="seta">
+                <a href="#projects">
+                    <img src="imagens/seta-para-baixo.png" alt="rolar para baixo">
+                </a>
+            </div>
+    </section>
+    </div>
     </section>
 
     <!-- Projetos -->
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Nome do Projeto</h3>
-            <p>Breve descrição do projeto.</p>
-            <a href="https://github.com" target="_blank">Ver no GitHub</a>
+    <section id="projects">
+        <div class="projetos">
+            <h2>Projetos</h2>
+        </div>
+        <div class="card">
+            <h3>API - Ecommerce Capacetes</h3>
+            <h4>Universidade Estadual do Tocantins</h4>
+            <span class="data">Agosto de 2025 - Novembro de 2025</span>
+            <p>
+                Este projeto consiste no desenvolvimento de uma API em Quarkus para um e-commerce especializado em
+                capacetes.
+                Construída sobre o Quarkus, a API é otimizada para alto desempenho, baixo consumo de recursos e fácil
+                implantação em ambientes em nuvem.
+            </p>
+            <p class="tecnologias">
+                <strong>Tecnologias:</strong><br>
+                Java, Quarkus, Docker, PostgreSQL
+            </p>
+            <a href="https://github.com/ZairoLins/TP1_capacetes_api" target="_blank" class="btn-github">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+            </a>
+        </div>
+        <div class="card">
+            <h3>Automação - GLPI</h3>
+            <h4>IDX Datacenters & IT Services</h4>
+            <span class="data">Agosto de 2025 - Novembro de 2025</span>
+            <p>
+                Este projeto foi desenvolvido no ambiente de estágio para automação de extração de dados no GLPI (Plataforma de gerenciamento de Tickets).
+            </p>
+            <p class="tecnologias">
+                <strong>Tecnologias:</strong><br>
+                Python
+            </p>
+            <a href="https://github.com/ZairoLins/Automacao_GLPI" target="_blank" class="btn-github">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+            </a>
+        </div>
+        <div class="card">
+            <h3>Blog - Profesor Odi</h3>
+            <h4>Universidade Estadual do Tocantins</h4>
+            <span class="data">Agosto de 2025 - Novembro de 2025</span>
+            <p>
+                Construção de um blog destinado ao Prof. Odi Alexander, voltado para a postagem de conteúdos de apoio relacionados a dificuldades mentais em geral. O sistema foi desenvolvido como parte da disciplina de estágio, com foco em oferecer um espaço acessível, simples de usar e direcionado ao acolhimento e compartilhamento de informações de apoio.
+            </p>
+            <p class="tecnologias">
+                <strong>Tecnologias:</strong><br>
+                HTML, CSS, JavaScript
+            </p>
+            <a href="https://github.com/ZairoLins/Automacao_GLPI" target="_blank" class="btn-github">
+                <i class="fa-brands fa-github"></i> Ver no GitHub
+            </a>
         </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog">
-        <h2>Blog / Artigos</h2>
-        <p>Lista de artigos ou posts que você já publicou.</p>
-    </section>
-
     <!-- Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <form>
-            <input type="text" name="nome" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu email" required>
-            <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <div class="card-contato">
+            <h2>Contato</h2>
+            <form action="https://formsubmit.co/zairolins15@gmail.com" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+
+                <!-- Configurações extras -->
+                <input type="hidden" name="_next" value="zairolins-blog.vercel.app">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        <p>© 2025 - Desenvolvido por [Seu Nome]</p>
+        <p>© 2025 - Desenvolvido por Zairo Lins Ribeiro Cunha</p>
     </footer>
 </body>
 
